@@ -290,6 +290,16 @@ button {
   font-size: 0.96rem;
 }
 
+.result-item small {
+  display: inline-block;
+  margin-bottom: 0.45rem;
+  color: #9edbff;
+  font-size: 0.72rem;
+  font-weight: 760;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 .result-item span {
   display: block;
   color: var(--muted);
@@ -345,6 +355,16 @@ button {
   font-weight: 500;
   line-height: 0.98;
   letter-spacing: 0;
+}
+
+.article-source {
+  margin: 0 0 0.85rem;
+  color: #006cb5;
+  font-family: var(--sans);
+  font-size: 0.82rem;
+  font-weight: 780;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .article-meta {
