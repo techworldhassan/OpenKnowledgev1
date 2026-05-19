@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="OpenKnowledge is a fast, readable encyclopedia search interface powered by open licensed article data."
+    >
+    <title>OpenKnowledge</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="OpenKnowledge home">
+        <img src="assets/openknowledge-logo.png" alt="" class="brand-mark">
+        <span>openknowledge</span>
+      </a>
+      <form class="search-shell" id="searchForm" role="search">
+        <label class="visually-hidden" for="searchInput">Search articles</label>
+        <input
+          id="searchInput"
+          name="q"
+          type="search"
+          autocomplete="off"
+          placeholder="Search open knowledge"
+          required
+        >
+        <button type="submit" aria-label="Search">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="m21 21-4.7-4.7m2.2-5.3a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0Z"></path>
+          </svg>
+        </button>
+      </form>
+    </header>
+
+    <main>
+      <section class="hero" id="hero">
+        <div class="hero-copy">
+          <h1>OpenKnowledge</h1>
+          <p>
+            A calm article reader for exploring openly licensed encyclopedia
+            content with fast search, focused reading, and clear source credits.
+          </p>
+          <form class="hero-search" id="heroSearchForm" role="search">
+            <label class="visually-hidden" for="heroSearchInput">Search articles</label>
+            <input
+              id="heroSearchInput"
+              name="q"
+              type="search"
+              autocomplete="off"
+              placeholder="Try astronomy, philosophy, medicine..."
+              required
+            >
+            <button type="submit">Search</button>
+          </form>
+        </div>
+        <div class="hero-logo" aria-hidden="true">
+          <img src="assets/openknowledge-logo.png" alt="">
+        </div>
+      </section>
+
+      <section class="workspace" id="workspace" hidden>
+        <aside class="results-panel" aria-label="Search results">
+          <div class="panel-heading">
+            <p>Results</p>
+            <span id="resultCount">0</span>
+          </div>
+          <div class="results-list" id="resultsList"></div>
+        </aside>
+
+        <article class="reader" id="reader" aria-live="polite">
+          <div class="empty-state">
+            <h2>Search for an article</h2>
+            <p>Results will appear on the left and selected articles will open here.</p>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        Article excerpts and pages are sourced from Wikipedia and are available
+        under the
+        <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license">CC BY-SA license</a>.
+        OpenKnowledge is not affiliated with or endorsed by the Wikimedia Foundation.
+      </p>
+    </footer>
+  </body>
+</html>
